@@ -1,0 +1,188 @@
+<% const page='about'; %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../includes/_head.ejs', {
+  path: "../",
+  url: "/showroom/",
+  title: "WEBショールーム | パワフルアーム PAW | CKD株式会社",
+  keywords: "パワフルアーム,助力装置,バランサ,ショールーム,デモ",
+  description: "パワフルアームのワーク別デモ機の動画をご覧いただけます。"}); 
+  %>
+
+<body id="showroom">
+  <%- include('../includes/_header.ejs', {path: "../"}); %>
+  <main>
+    <section class="common-main-visual">
+      <h1 class="common-main-visual__title">WEBショールーム</h1>
+      <p class="common-main-visual__lead">ワーク別デモ機の動画をご覧頂けます。実際に体験も可能ですので、お気軽にお問い合わせください。</p>
+    </section>
+    <section class="showroom">
+      <div class="showroom__content">
+        <a href="" data-target="modal01" data-video="https://ckd.co-site.jp/ad/movie/kiki/jp/paw/1280-720_PAW_demonstration1_JP_disclaimer.mp4" class="showroom__btn01 showroom__btn js_modal_open">
+          <img src="../assets/images/showroom/btn_01_a.png" alt="板状ワーク 90度回転">
+          <img src="../assets/images/showroom/btn_01_b.png" alt="板状ワーク 90度回転">
+        </a>
+        <a href="" data-target="modal02" data-video="https://ckd.co-site.jp/ad/movie/kiki/jp/paw/1280-720_PAW_demonstration2_JP_disclaimer.mp4" class="showroom__btn02 showroom__btn js_modal_open">
+          <img src="../assets/images/showroom/btn_02_a.png" alt="段ボール 吸着">
+          <img src="../assets/images/showroom/btn_02_b.png" alt="段ボール 吸着">
+        </a>
+        <a href="" data-target="modal03" data-video="https://ckd.co-site.jp/ad/movie/kiki/jp/paw/1280-720_PAW_demonstration3_JP_disclaimer.mp4" class="showroom__btn03 showroom__btn js_modal_open">
+          <img src="../assets/images/showroom/btn_03_a.png" alt="ばんじゅう ハンド">
+          <img src="../assets/images/showroom/btn_03_b.png" alt="ばんじゅう ハンド">
+        </a>
+        <a href="" data-target="modal04" data-video="https://ckd.co-site.jp/ad/movie/kiki/jp/paw/1280-720_PAW_demonstration4_JP_disclaimer.mp4" class="showroom__btn04 showroom__btn js_modal_open">
+          <img src="../assets/images/showroom/btn_04_a.png" alt="ばんじゅう ハンド">
+          <img src="../assets/images/showroom/btn_04_b.png" alt="ばんじゅう ハンド">
+        </a>
+        <a href="" data-target="modal05" data-video="https://ckd.co-site.jp/ad/movie/kiki/jp/paw/1280-720_PAW_demonstration5_JP_disclaimer.mp4" class="showroom__btn05 showroom__btn js_modal_open">
+          <img src="../assets/images/showroom/btn_05_a.png" alt="袋吸着">
+          <img src="../assets/images/showroom/btn_05_b.png" alt="袋吸着">
+        </a>
+        <a href="" data-target="modal06" data-video="https://ckd.co-site.jp/ad/movie/kiki/jp/paw/1280-720_PAW_demonstration6_JP_disclaimer.mp4" class="showroom__btn06 showroom__btn js_modal_open">
+          <img src="../assets/images/showroom/btn_06_a.png" alt="一斗缶投入 （液体・個体）">
+          <img src="../assets/images/showroom/btn_06_b.png" alt="一斗缶投入 （液体・個体）">
+        </a>
+        <a href="" data-target="modal07" data-video="https://ckd.co-site.jp/ad/movie/kiki/jp/paw/1280-720_PAW_demonstration7_JP_disclaimer.mp4" class="showroom__btn07 showroom__btn js_modal_open">
+          <img src="../assets/images/showroom/btn_07_a.png" alt="フック型 汎用モデル">
+          <img src="../assets/images/showroom/btn_07_b.png" alt="フック型 汎用モデル">
+        </a>
+        <p class="showroom__content__lead">吹き出しをクリックして動画をご確認ください。</p>
+      </div>
+    </section>
+  </main>
+  <div id="modal01" class="showroom__modal js_modal">
+    <div class="showroom__modal_bg js_modal_close"></div>
+    <div class="showroom__modal-content">
+      <div class="showroom__movie-wrap">
+        <h2>板状ワーク90度反転</h2>
+        <div class="common__movie-container">
+          <div class="common__movie-play-tumb"data-index="0"><img src="../assets/images/showroom/demonstration1.jpg" alt=""></div>
+          <video  playsinline controls poster="" src=""></video>
+        </div>
+        <p class="">大板の吸着反転デモンストレーションです。専用吸着パッドを用いて、中腰などの不安定な姿勢を取ることなく、安全かつ容易なワークの反転を実現いたしました。鉄板やガラス、合板など大きな平面を持ったワークでも使用できます。 </p>
+        <div class="showroom__close js_modal_close"></div>
+      </div>
+    </div>
+  </div>
+  <div id="modal02" class="showroom__modal js_modal">
+    <div class="showroom__modal_bg js_modal_close"></div>
+    <div class="showroom__modal-content">
+      <div class="showroom__movie-wrap">
+        <h2>段ボール吸着</h2>
+        <div class="common__movie-container">
+          <div class="common__movie-play-tumb"data-index="1"><img src="../assets/images/showroom/demonstration2.jpg"  alt=""></div>
+          <video  playsinline controls poster="" src=""></video>
+        </div>
+        <p class="">専用吸着パッドを用いて、荷受け・出荷工程で段ボールの搬送にお役立ちいただけます。特に荷受け工程で荷崩れした段ボール等、ロボットでは難しいシーンで活躍します。中腰などの不安定な姿勢を取ることなく、安全かつ容易なワークの搬送を実現いたしました。段ボールを送って頂ければ吸着テストを実施します。 </p>
+        <div class="showroom__close js_modal_close"></div>
+      </div>
+    </div>
+  </div>
+  <div id="modal03" class="showroom__modal js_modal">
+    <div class="showroom__modal_bg js_modal_close"></div>
+    <div class="showroom__modal-content">
+      <div class="showroom__movie-wrap">
+        <h2>ばんじゅう・コンテナクランプ</h2>
+        <div class="common__movie-container">
+          <div class="common__movie-play-tumb"data-index="2"><img src="../assets/images/showroom/demonstration3.jpg"  alt=""></div>
+          <video  playsinline controls poster="" src=""></video>
+        </div>
+        <p class="">専用クランパーを用いて中腰などの不安定な姿勢を取ることなく、安全かつ容易なワークの搬送を実現いたしました。<br> サイズに合わせた専用設計又はサイズの違うものも対応出来ます。 </p>
+        <div class="showroom__close js_modal_close"></div>
+      </div>
+    </div>
+  </div>
+  <div id="modal04" class="showroom__modal js_modal">
+    <div class="showroom__modal_bg js_modal_close"></div>
+    <div class="showroom__modal-content">
+      <div class="showroom__movie-wrap">
+        <h2>一斗缶吸着</h2>
+        <div class="common__movie-container">
+          <div class="common__movie-play-tumb"data-index="3"><img src="../assets/images/showroom/demonstration4.jpg"  alt=""></div>
+          <video  playsinline controls poster="" src=""></video>
+        </div>
+        <p class="">専用設計の吸着パッドを用いて、中腰などの不安定な姿勢を取ることなく、安全かつ容易なワークの搬送を実現いたしました。ハンドルのない一斗缶にも対応出来ます。 </p>
+        <div class="showroom__close js_modal_close"></div>
+      </div>
+    </div>
+  </div>
+  <div id="modal05" class="showroom__modal js_modal">
+    <div class="showroom__modal_bg js_modal_close"></div>
+    <div class="showroom__modal-content">
+      <div class="showroom__movie-wrap">
+        <h2>袋吸着</h2>
+        <div class="common__movie-container">
+          <div class="common__movie-play-tumb"data-index="4"><img src="../assets/images/showroom/demonstration5.jpg"  alt=""></div>
+          <video playsinline controls  poster="" src=""></video>
+        </div>
+        <p class="">専用楕円真空パッドを用いて、真空ポンプにて吸着いたします。中腰などの不安定な姿勢を取ることなく、安全かつ容易なワークの搬送を実現いたしました。材料袋を送って頂ければ吸着テストを実施します。 </p>
+        <div class="showroom__close js_modal_close"></div>
+      </div>
+    </div>
+  </div>
+  <div id="modal06" class="showroom__modal js_modal">
+    <div class="showroom__modal_bg js_modal_close"></div>
+    <div class="showroom__modal-content">
+      <div class="showroom__movie-wrap">
+        <h2>一斗缶投入（液体・個体）</h2>
+        <div class="common__movie-container">
+          <div class="common__movie-play-tumb"data-index="5"><img src="../assets/images/showroom/demonstration6.jpg"  alt=""></div>
+          <video  playsinline controls poster="" src=""></video>
+        </div>
+        <p class="">食品、製薬、化学など一斗缶の中身を投入する工程で一斗缶の持ち上げと投入を1台で賄えます。全量投入ではない場合目安の重量をお知らせするオプションも検討できます。 </p>
+        <div class="showroom__close js_modal_close"></div>
+      </div>
+    </div>
+  </div>
+  <div id="modal07" class="showroom__modal js_modal">
+    <div class="showroom__modal_bg js_modal_close"></div>
+    <div class="showroom__modal-content">
+      <div class="showroom__movie-wrap">
+        <h2>フック型汎用モデル</h2>
+        <div class="common__movie-container">
+          <div class="common__movie-play-tumb"data-index="6"><img src="../assets/images/showroom/demonstration7.jpg"  alt=""></div>
+          <video  playsinline controls poster="" src=""></video>
+        </div>
+        <p class="">先端にフックがついているので、汎用のアタッチメントなどを吊り下げることで、安価にそして簡単に現在の作業を安全かつ容易に行う事が出来ます。現在ご使用の冶具などを転用することもできるかもしれません。 </p>
+        <div class="showroom__close js_modal_close"></div>
+      </div>
+    </div>
+  </div>
+  <%- include('../includes/_footer.ejs', {path: "../"}); %>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  <script src="../assets/js/index.js?20221206"></script>
+  <script type="text/javascript">
+    $(function(){
+        var winScrollTop;
+        // var videoElement = document.getElementsByTagName("video");
+        $('.js_modal_open').each(function(){
+            $(this).on('click',function(){
+                //スクロール位置を取得
+                winScrollTop = $(window).scrollTop();
+                var target = $(this).data('target');
+                var videoId = $(this).data('video');
+                var modal = document.getElementById(target);
+                var modalChild = $(modal).find("video");
+                $(modal).fadeIn();
+                $(modalChild).attr("src", videoId );
+                $(".showroom__movie-wrap").addClass('show');
+                return false;
+            });
+        });
+        $('.js_modal_close').on('click',function(){
+            $('.js_modal').fadeOut();
+            $(".common__movie-play-tumb").show();
+            $(".showroom__movie-wrap").removeClass('show');
+            $("video").attr("src", "" );
+            $('body,html').stop().animate({scrollTop:winScrollTop}, 100);
+            return false;
+        }); 
+    });
+  </script>
+</body>
+
+</html>

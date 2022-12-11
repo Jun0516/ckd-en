@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+  <g id="グループ_1022" data-name="グループ 1022" transform="translate(-379 -986.611)">
+    <g id="長方形_642" data-name="長方形 642" transform="translate(379 986.611)" fill="#fff100" stroke="#000" stroke-width="1">
+      <rect width="51" height="51" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="50" height="50" rx="7.5" fill="none"/>
+    </g>
+    <path id="パス_2828" data-name="パス 2828" d="M516.959,2798.776c0,.471,0,.671,0,.959s.112.228.422.355a2.378,2.378,0,0,1,1.509,2.507,2.777,2.777,0,0,1-2.685,2.951,2.707,2.707,0,0,1-2.574-1.553,5.116,5.116,0,0,1-.355-1.886c-.067-.377-.532-.644-.311-.932a.585.585,0,0,1,.777-.067,10.23,10.23,0,0,1,1.154,1.265c.111.156.6,1.243,1.109,1.265.532.022.91-.2.91-.954a1.581,1.581,0,0,0-.488-1.154c-.333-.311-.954-.91-.954-.91l.034-1.839" transform="translate(-111.875 -1779.216)" stroke="#000" stroke-linejoin="round" stroke-width="0.5"/>
+    <rect id="長方形_522" data-name="長方形 522" width="42.822" height="3.35" transform="translate(383.09 1006.593)" stroke="#000" stroke-linejoin="round" stroke-width="0.5"/>
+    <rect id="長方形_523" data-name="長方形 523" width="21.956" height="12.754" transform="translate(393.523 1001.891)" stroke="#000" stroke-linejoin="round" stroke-width="0.5"/>
+    <rect id="長方形_524" data-name="長方形 524" width="8.823" height="1.499" transform="translate(400.09 1014.645)" stroke="#000" stroke-linejoin="round" stroke-width="0.5"/>
+    <path id="パス_2831" data-name="パス 2831" d="M586.8,2737.906v-2.987h-2.737" transform="translate(-168.582 -1728.326)" stroke="#000" stroke-linejoin="round" stroke-width="0.5"/>
+    <path id="パス_2832" data-name="パス 2832" d="M462.461,2737.906v-2.987H465.2" transform="translate(-71.676 -1728.326)" stroke="#000" stroke-linejoin="round" stroke-width="0.5"/>
+    <path id="長方形_525" data-name="長方形 525" d="M.206,0H3.95a.206.206,0,0,1,.206.206V1.564A2.078,2.078,0,0,1,2.078,3.641h0A2.078,2.078,0,0,1,0,1.564V.206A.206.206,0,0,1,.206,0Z" transform="translate(402.35 1016.144)" stroke="#000" stroke-linejoin="round" stroke-width="0.5"/>
+  </g>
+</svg>

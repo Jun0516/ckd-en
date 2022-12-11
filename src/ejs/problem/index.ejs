@@ -1,0 +1,130 @@
+<% const page='about'; %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../includes/_head.ejs', {
+  path: "../",
+  url: "/problem/",
+  title: "こんな課題の解決に | パワフルアーム PAW | CKD株式会社",
+  keywords: "パワフルアーム,助力装置,バランサ,課題解決",
+  description: "重量物持ち上げのお悩みをパワフルアームが解決します！"}); 
+  %>
+
+<body id="problem">
+  <%- include('../includes/_header.ejs', {path: "../"}); %>
+  <main>
+    <section class="common-main-visual">
+      <h1 class="common-main-visual__title">こんな課題の解決に</h1>
+      <p class="common-main-visual__lead">これらのお悩みをパワフルアームが解決します！</p>
+    </section>
+
+    <section class="problem">
+      <div class="l-inner">
+        <ul class="problem__tab-list filter">
+          <li data-filter="all" class="problem__list active">
+            すべて
+          </li>
+          <li data-filter="car" class="problem__list">
+            自動車
+          </li>
+          <li data-filter="food" class="problem__list">
+            食品
+          </li>
+          <li data-filter="machine" class="problem__list">
+            工作機械
+          </li>
+          <li data-filter="medical" class="problem__list">
+            医薬
+          </li>
+          <li data-filter="science" class="problem__list">
+            化学
+          </li>
+          <li data-filter="other" class="problem__list">
+            その他
+          </li>
+        </ul>
+        <div class="problem__content-list">
+          <div class="problem__js-content">
+            <ul class="problem__item-list links">
+              <%- include('./_item01.ejs', {category: "car machine"}); %>
+              <%- include('./_item02.ejs', {category: "food medical"}); %>
+              <%- include('./_item03.ejs', {category: "food medical science"}); %>
+              <%- include('./_item04.ejs', {category: "car machine"}); %>
+              <%- include('./_item05.ejs', {category: "car"}); %>
+              <%- include('./_item06.ejs', {category: "car machine"}); %>
+              <%- include('./_item07.ejs', {category: "car machine"}); %>
+              <%- include('./_item08.ejs', {category: "car machine"}); %>
+              <%- include('./_item09.ejs', {category: "car food other"}); %>
+              <%- include('./_item10.ejs', {category: "food science other"}); %>
+              <%- include('./_item11.ejs', {category: "car medical other"}); %>
+              <%- include('./_item12.ejs', {category: "food medical other"}); %>
+              <%- include('./_item13.ejs', {category: "car other"}); %>
+              <%- include('./_item14.ejs', {category: "car food medical other"}); %>
+              <%- include('./_item15.ejs', {category: "car other"}); %>
+              <%- include('./_item16.ejs', {category: "car other"}); %>
+              <%- include('./_item17.ejs', {category: "food medical"}); %>
+              <%- include('./_item18.ejs', {category: "machine"}); %>
+              <%- include('./_item19.ejs', {category: "car other"}); %>
+              <%- include('./_item20.ejs', {category: "car other"}); %>
+              <%- include('./_item21.ejs', {category: "car food medical science"}); %>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <%- include('../includes/_footer.ejs', {path: "../"}); %>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  <script src="../assets/js/index.js?20221206"></script>
+  <script>
+      // $(".problem__list").on("click", function () {
+      //   var $th = $(this).index();
+      //   $(".problem__list").removeClass("active");
+      //   $(this).addClass("active");
+      //   $(".problem__content").removeClass("show");
+      //   $(".problem__content").eq($th).addClass("show");
+      // });
+      
+
+
+      $(function () {
+        'use strict';
+
+        var $filters = $('.filter [data-filter]'),
+          $links = $('.links [data-category]');
+
+        $filters.on('click', function (e) {
+          console.log($filters);
+          e.preventDefault();
+          var $this = $(this);
+
+          $filters.removeClass('active');
+          $this.addClass('active');
+
+          var $filter = $this.attr('data-filter');
+
+          if ($filter == 'all') {
+            $links.fadeOut().finish().promise().done(function () {
+                $links.each(function (i) {
+                  $(this).addClass('is-animated').delay((i++) * 0).fadeIn();
+                });
+              });
+          } else {
+            $links.fadeOut().finish().promise().done(function () {
+                // $links.filter('[data-category = "' + $filter + '"]').each(function (i) {
+                $links.filter('[data-category~="' + $filter + '"]').each(function (i) {
+                  $(this).addClass('is-animated').delay((i++) * 0).fadeIn();
+                });
+              });
+          }
+        });
+        });
+
+  </script>
+</body>
+
+</html>

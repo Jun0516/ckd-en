@@ -1,0 +1,99 @@
+<% const page='about'; %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../../includes/_head.ejs', {
+  path: "../../",
+  url: "/attachment/detail03/",
+  title: "アタッチメント［段ボール吸着用］| パワフルアーム PAW | CKD株式会社",
+  keywords: "パワフルアーム,助力装置,バランサ,アタッチメント, 段ボール,吸着,搬送,移載",
+  description: "出荷・荷受け工程等での段ボール箱搬送に適合しており、コンベアとパレット間の荷物の移載に最適です。"}); 
+  %>
+
+<body id="attachment-detail">
+  <%- include('../../includes/_header.ejs', {path: "../../"}); %>
+  <main>
+    <!-- <img src="../assets/images/attachment/link_01_pickup.svg" alt=""> -->
+    <section class="common-main-visual">
+      <h1 class="common-main-visual__title">アタッチメント例</h1>
+      <p class="common-main-visual__lead">アタッチメント例をご紹介します。</p>
+    </section>
+    <section class="attachment-detail">
+      <div class="l-inner">
+        <ul class="attachment-detail__tab-list">
+          <li class="attachment-detail__tab">
+            <a href="../detail01/">吊り下げ式フック〈汎用型〉</a>
+          </li>
+          <li class="attachment-detail__tab">
+            <a href="../detail02/">袋吸着用</a>
+          </li>
+          <li class="attachment-detail__tab">
+            <a class="active" href="../detail03/">段ボール吸着用</a>
+          </li>
+          <li class="attachment-detail__tab">
+            <a href="../detail04/">一斗缶吸着用</a>
+          </li>
+          <li class="attachment-detail__tab">
+            <a href="../detail05/">ロール材内径クランプ用</a>
+          </li>
+          <li class="attachment-detail__tab">
+            <a href="../detail06/">コンテナ・ばんじゅう用クランプ</a>
+          </li>
+        </ul>
+        <div class="attachment-detail__container">
+          <!-- tab 03 -->
+          <section class="attachment-detail__tab-content">
+            <h2 class="attachment-detail__top-title">段ボール吸着用</h2>
+            <div class="attachment-detail__top-block">
+              <div class="attachment-detail__top-image">
+                <img src="../../assets/images/attachment/detail03/blk_img.jpg" alt="">
+              </div>
+              <div class="attachment-detail__top-text-blk">
+                <p class="attachment-detail__top-text">
+                  出荷・荷受け工程等での段ボール箱搬送に適合しており、コンベアとパレット間の荷物の移載に最適です。<br>
+                  アタッチメントはオリフィス付の真空吸着式で、いろいろなサイズの段ボールに使用可能です。
+                </p>
+                <dl class="attachment-detail__top-dl">
+                  <dt class="attachment-detail__top-dt">用途</dt>
+                  <dd class="attachment-detail__top-dd">
+                    様々な製品の組立完成工程で製品の入った段ボール箱の、コンベアからパレットへの移載補助
+                  </dd>
+                </dl>
+                <dl class="attachment-detail__top-dl">
+                  <dt class="attachment-detail__top-dt">最大搬送質量(0.58MPa時)</dt>
+                  <dd class="attachment-detail__top-dd attachment-detail__top-dd--center">
+                    25㎏
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="attachment-detail__wrapper">
+              <h3 class="attachment-detail__documents-title">関連資料</h3>
+              <div class="attachment-detail__documents-link common__link-btn-overlap">
+                <a class="common__link-btn-overlap-btn common__link-btn-overlap-btn--center" href="../../assets/pdf/テクノレポート_パワフルアームPAWシリーズ_パレタイジング用途別モデル提案_段ボール箱搬送.pdf" download>パワフルアームPAWシリーズ パレタイジング用途別モデル提案　段ボール箱搬送</a>
+                <div class="common__link-btn-bg"></div>
+              </div>
+              <h3 class="attachment-detail__documents-title">関連動画</h3>
+              <div class="attachment-detail__movie-block">
+                <%- include('../../includes/component/_movie.ejs', {poster: "assets/images/attachment/attachment2.jpg",path: "../../",filePath: "https://ckd.co-site.jp/ad/movie/kiki/jp/paw/1280-720_PAW_attachment2_JP_disclaimer.mp4"}); %>
+              </div>
+              <div class="attachment-detail__back-btn common__link-btn-overlap">
+                <a class="common__link-btn-overlap-btn common__link-btn-overlap-btn--center common__link-btn-overlap-btn--white" href="../">一覧に戻る</a>
+                <div class="common__link-btn-bg"></div>
+              </div>
+            </div>
+          </section>
+          <!-- ./tab 01 -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('../../includes/_footer.ejs', {path: "../../"}); %>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  <script src="../../assets/js/index.js?20221206"></script>
+</body>
+
+</html>

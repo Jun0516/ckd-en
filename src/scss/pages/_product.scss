@@ -1,0 +1,136 @@
+#product{
+  .product{
+    padding: 4rem 0 6.2rem;
+    @media (max-width: 767px){
+      padding: 7.4rem 0 12rem;
+    }
+    &__title{
+      text-align: center;
+      font-size: 4rem;
+      -webkit-text-stroke: 0.1rem #000;
+      text-stroke: 0.1rem #000;
+      color: #A1DED2;
+      @media (max-width: 767px){
+        line-height: 1.5;
+      }
+    }
+    &__link-list{
+      width: 88.3rem;
+      margin: 6rem auto 0;
+      @media (max-width: 767px){
+        width: 100%;
+        display: block;
+      }
+    }
+    &__link{
+      width: 100%;
+      margin-bottom: 5rem;
+      @media (max-width: 767px){
+        margin: 0 auto 5rem;
+      }
+      &:hover{
+        .product__link-main-text{
+          color: #fff;
+        }
+        .product__link-lead-sub{
+          color: #fff;
+        }
+        .product__link-text-blk{
+          background: #000 !important;
+        }
+        .product__link-btn{
+          background: #fff;
+        }
+      }
+      a{
+        display: block;
+        border: 2px solid #000;
+      }
+    }
+    &__link-block{
+      display: flex;
+      border-bottom: 2px solid #000;
+      @media (max-width: 767px){
+      }
+    }
+    &__link-image{
+      width: 29.3rem;
+      background: #fff;
+      @media (max-width: 767px){
+        width: 20.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img{
+        width: 100%;
+        object-fit: cover;
+        @media (max-width: 767px){
+        }
+      }
+    }
+    &__link-text-blk{
+      padding: 2.8rem 2.2rem 3.6rem 3.4rem;
+      background: #fff;
+      width: calc(100% - 17.6rem);
+      border-right: 2px solid #000;
+      background: #E8DFC9;
+      @media (max-width: 767px){
+        padding: 2.8rem 2.2rem 3.6rem 2.2rem;
+        width: calc(100% - 20.5rem);
+      }
+    }
+    &__link-main-text{
+      font-size: 2.6rem;
+      font-weight: bold;
+      line-height: 1.5384;
+      display: flex;
+      align-items: left;
+      justify-content: center;
+      flex-direction: column;
+      transition-duration: 0.3s;
+      letter-spacing: 0.06em;
+      @media (max-width: 767px){
+        font-size: 3.2rem;
+      }
+    }
+    &__link-lead-sub{
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 1.9rem;
+      transition-duration: 0.3s;
+      line-height: 1.56;
+      @media (max-width: 767px){
+        font-size: 2.4rem;
+      }
+    }
+    &__link-btn{
+      font-size: 2.4rem;
+      font-weight: bold;
+      background: #FFF100;
+      padding: 2rem 7.2rem 2rem 0;
+      display: flex;
+      justify-content: right;
+      position: relative;
+      transition-duration: 0.3s;
+      letter-spacing: 0.06em;
+      @media (max-width: 767px){
+        padding: 2.2rem 7.2rem 2.3rem 0;
+        font-size: 2.8rem;
+      }
+      &::after{
+        content: "";
+        width: 1.6rem;
+        height: 2.562rem;
+        background: url(../../assets/images/case_study/link_arrow.svg) no-repeat center center / contain;
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        right: 3.2rem;
+        @media (max-width: 767px){
+          top: 2.5rem;
+        }
+      }
+    }
+  }
+}

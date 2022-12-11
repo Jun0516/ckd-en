@@ -1,0 +1,104 @@
+
+/* common animation ///////////////////////////////////////////////*/
+.js-focus {
+  opacity: 0;
+}
+.focus-in {
+  animation: focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@keyframes focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.js-u-fade {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.1s cubic-bezier(0.5, 1, 0.89, 1), transform 0.3s cubic-bezier(0.5, 1, 0.89, 1);
+}
+.js-r-fade {
+  transform: translateX(60px);
+  opacity: 0;
+  transition: opacity 0.1s cubic-bezier(0.5, 1, 0.89, 1), transform 0.3s cubic-bezier(0.5, 1, 0.89, 1);
+}
+.js-l-fade {
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.5, 1, 0.89, 1), transform 0.3s cubic-bezier(0.5, 1, 0.89, 1);
+}
+.fade-in {
+  opacity: 1;
+  transform: translate(0);
+}
+.js-spin{
+  transform: rotateY(-450deg);
+  transition-duration: 0.8s;
+  will-change: transform;
+  opacity: 0;
+}
+.js-spin.spin{
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+ @keyframes anm_coin {
+   0% {
+     transform: rotateY(-450deg);
+     opacity: 0;
+   }
+   100% {
+     transform: rotateY(0deg);
+     opacity: 1;
+   }
+ }
+
+
+/* txt overflow animation */
+/* js-m-txt wrapping to maskElem */
+
+.js-m-txt {
+  overflow: auto;
+}
+.js-m-txt .maskElem-y{
+  transform: translateY(120%);
+  display: block;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+.js-m-txt .maskElem-x{
+  transform: translateX(-120%);
+  display: block;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+@keyframes mask {
+  100% {
+    transform: translate(0);
+  }
+}
+.mask.animated .maskElement-y,
+.mask.animated .maskElement-x{
+  animation: mask cubic-bezier(0.86,0,0.07,1) forwards;
+  animation-duration: 1.5s;
+  overflow: hidden;
+}
+
+/* images overflow animation */
+.js-m-img{
+  clip-path: inset(0 100% 0 0);
+  /* display: inline-block; */
+  transition: 1.5s 0.5s cubic-bezier(0.86,0,0.07,1);
+  transition-property: clip-path;
+}
+.js-m-img.center{
+  clip-path: inset(0 100% 100% 0);
+}
+.js-m-img.animated{
+  clip-path: inset(0);
+}
