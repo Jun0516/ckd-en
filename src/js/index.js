@@ -41,14 +41,22 @@ $(function () {
   });
 
 
-  let loc = location.pathname,
-      dir = loc.substring(0, loc.lastIndexOf('/')) + '/';
-
+  let url = window.location.href;
   $('.js-lang-button').each(function () {
-      //スクロール位置を取得
-      var lang = $(this).data('lang');
-      console.log(lang);
-      $(this).attr("href", "/kiki/" + lang + "/paw" + dir);
+    let lang = $(this).data('lang');
+    if(url.search(/\/jp\//) !== -1) {
+      let langUrl = url.replace('/jp/', lang );
+      $(this).attr("href", langUrl);
+
+    }else if(url.search(/\/en\//) !== -1) {
+      let langUrl = url.replace('/en/', lang );
+      $(this).attr("href", langUrl);
+
+    }else  if(url.search(/\/sc\//) !== -1) {
+      let langUrl = url.replace('/sc/', lang );
+      $(this).attr("href", langUrl);
+    }
+  
   });
 
 
