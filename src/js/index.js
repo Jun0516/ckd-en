@@ -77,13 +77,11 @@ $(function () {
 		var video = $("video").get(index);
     let is_playing = false;
 		if (!is_playing) {
-			console.log("再生する");
       video.play();
       is_playing = true;
       $(".common__movie-play-tumb").delay(200).fadeOut();
 		} else {
       video.pause();
-			console.log("止めました");
 		}
 	});
 });
@@ -113,7 +111,6 @@ $(function () {
   //  アンカーリンクスムーススクロール
   $('a[href^="#"]').click(function () {
     var headerHeight = $('#header').height();
-    console.log(headerHeight);
     var speed = 500;
     var offset = 60;
     var href = $(this).attr("href");
