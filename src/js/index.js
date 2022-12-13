@@ -39,6 +39,19 @@ $(function () {
       return false;
     });
   });
+
+
+  let loc = location.pathname,
+      dir = loc.substring(0, loc.lastIndexOf('/')) + '/';
+
+  $('.js-lang-button').each(function () {
+      //スクロール位置を取得
+      var lang = $(this).data('lang');
+      console.log(lang);
+      $(this).attr("href", "/kiki/" + lang + "/paw" + dir);
+  });
+
+
   $('.common__js_modal_close').on('click', function () {
     $('.common__js_modal').fadeOut();
     $(".common__movie-play-tumb").show();
