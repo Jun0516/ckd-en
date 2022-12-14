@@ -18,6 +18,11 @@
     // @media (max-width: 1199px){
     //   height: calc(700 * (100vh / 800));
     // }
+    @media (max-width: 1024px){
+      // height: calc(600 * (100vh / 800));
+      height: calc(1080 * (100vw / 1920));
+      min-height: unset
+    }
     @media (max-width: 950px){
       // height: calc(600 * (100vh / 800));
     }

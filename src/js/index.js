@@ -3,15 +3,28 @@ $(function () {
   var ua = navigator.userAgent.toLowerCase();
   var isiPad = (ua.indexOf('ipad') > -1);
   var isAndroidTablet = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') == -1);
+  var agent = window.navigator.userAgent.toLowerCase()
   // if (ua.indexOf('ipad') > -1
   //   || ua.indexOf('macintosh') > -1 && 'ontouchend' in document) {
   //   // iPad用の処理
   //   $("meta[name='viewport']").attr('content', 'width=1400');
   //   $("body").addClass("tablet");
   // }
-  if (isiPad || isAndroidTablet || ua.indexOf('macintosh') > -1 && 'ontouchend' in document) {
-    $("meta[name='viewport']").attr('content', 'width=1400');
+  if (isiPad || ua.indexOf('macintosh') > -1 && 'ontouchend' in document) {
     $("body").addClass("tablet");
+    if (agent.indexOf("chrome") != -1) {
+      $("meta[name='viewport']").attr('content', 'width=1400');
+    } else if (navigator.userAgent.indexOf('CriOS') >= 0) {
+      $("meta[name='viewport']").attr('content', 'width=1400');
+    } else if (agent.indexOf("safari") != -1) {
+      $("meta[name='viewport']").attr('content', 'width=1920');
+    } else {
+      $("meta[name='viewport']").attr('content', 'width=1400');
+    }
+
+   }else if (isAndroidTablet) {
+      $("body").addClass("tablet");
+      $("meta[name='viewport']").attr('content', 'width=1400');
    }
 });
 $(function () {
@@ -40,6 +53,22 @@ $(function () {
     });
   });
 
+  
+
+  // let loc = location.pathname.replace(/\/+$/, "").split('/').pop();
+  // let dir = loc.substring(0, loc.lastIndexOf('/')) + '/';
+
+
+
+
+  // $('.js-lang-button').each(function () {
+  //     //スクロール位置を取得
+  //     var lang = $(this).data('lang');
+  //     $(this).attr("href", "/kiki/" + lang + "/paw" + dir);
+  // });
+
+
+
 
   let url = window.location.href;
   $('.js-lang-button').each(function () {
@@ -47,6 +76,7 @@ $(function () {
     if(url.search(/\/jp\//) !== -1) {
       let langUrl = url.replace('/jp/', lang );
       $(this).attr("href", langUrl);
+      
 
     }else if(url.search(/\/en\//) !== -1) {
       let langUrl = url.replace('/en/', lang );
@@ -58,6 +88,17 @@ $(function () {
     }
   
   });
+
+  // if(url.search(/\/jp\//) !== -1) {
+  //   // 日本語の時
+  //   let enUrl = url.replace('/jp/', '/en/');
+  //   let scUrl = url.replace('/jp/', '/sc/');
+  //   enBtn.attr('href', enUrl);
+  //   scUrl.attr('href', scUrl);
+  // }else if(url.search(/\/en\//) !== -1) {
+  //   langUrl = url.replace('/en/', '/jp/');
+  //   $('p#language a').attr('href', langUrl);
+  // }
 
 
   $('.common__js_modal_close').on('click', function () {
