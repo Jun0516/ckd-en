@@ -183,6 +183,7 @@
     text-stroke: 0.2rem #000;
     letter-spacing: 0.1em;
     line-height: 1.4;
+    padding: 0 calc(40 * (100vw / 1920));
     @media (max-width: 767px){
       font-size: 4.4rem;
       -webkit-text-stroke: 0.15rem #000;
@@ -205,6 +206,7 @@
     line-height: 1.5384;
     @media (max-width: 767px){
       font-size: 2.4rem;
+      padding: 0 2rem;
     }
   }
 }
@@ -345,8 +347,12 @@
         .common-feature__card-lead{
           transform: translateY(-12rem) scale(1.15);
           color: #fff;
+          font-size: 2rem;
+          padding: 0 4rem;
           @media (max-width: 1024px){
             transform: unset;
+            font-size: 2.4rem;
+            padding: 0 4rem;
           }
         }
         .common-feature__card-floating-text{
@@ -430,7 +436,7 @@
   }
   &__text-blk{
     @media (max-width: 767px){
-      width: 47%;
+      width: 42%;
       display: flex;
       justify-content: center;
       flex-direction: column;
